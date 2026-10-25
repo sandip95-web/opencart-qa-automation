@@ -182,4 +182,4 @@ The repository includes a ready-to-use CI pipeline located at [`.github/workflow
 3. **Dynamic Test Data:** Dynamic timestamp-based generators ensure test independence and zero state leakage between test runs.
 4. **Clean Code & Strict Linting:** Modular page helper methods, readable assertions, and organized imports.
 
-👉 For manual test designs, RTM, and defect reports, see [Manual Testing Documentation](../manual-testing/README.md).
+👉 For manual test designs, test plan, and RTM, see [Manual Testing Documentation](../manual-testing/README.md).

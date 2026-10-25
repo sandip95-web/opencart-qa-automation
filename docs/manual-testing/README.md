@@ -2,23 +2,19 @@
 
 This directory contains the complete Manual Testing documentation and Quality Assurance deliverables for the **OpenCart E-Commerce** web application. 
 
-As part of the end-to-end Software Testing Life Cycle (STLC), these deliverables establish requirements traceability, risk-based test planning, detailed scenario design, execution metrics, and defect management.
+As part of the end-to-end Software Testing Life Cycle (STLC), these deliverables establish requirements traceability, risk-based test planning, and detailed scenario design.
 
 ---
 
 ## 📑 Core Manual Testing Deliverables
 
-The live testing artifacts are maintained in Google Sheets for real-time collaboration and traceability. Use the direct links below to review the corresponding sheets:
+The live testing artifacts are maintained online for real-time collaboration and traceability. Use the direct links below to review the corresponding documents:
 
-| Deliverable | Description | Live Google Sheets Link | Local Reference |
+| Deliverable | Description | Live Document Link | Local Reference |
 | :--- | :--- | :--- | :--- |
-| **Test Plan** | Comprehensive test strategy, scope, environment, entry/exit criteria, and risk mitigation | [🔗 OpenCart Test Plan (Google Sheets)](https://docs.google.com/spreadsheets/d/YOUR_GOOGLE_SHEET_ID_TEST_PLAN/edit?usp=sharing) | — |
-| **Test Cases** | Detailed test cases covering 18 functional modules (preconditions, steps, data, expected results) | [🔗 OpenCart Test Cases Suite (Google Sheets)](https://docs.google.com/spreadsheets/d/YOUR_GOOGLE_SHEET_ID_TEST_CASES/edit?usp=sharing) | [`sheet.xlsx`](../../sheet.xlsx) |
-| **Requirements Traceability Matrix (RTM)** | Bidirectional mapping between business requirements, test cases, and automated scripts | [🔗 Requirements Traceability Matrix (Google Sheets)](https://docs.google.com/spreadsheets/d/YOUR_GOOGLE_SHEET_ID_RTM/edit?usp=sharing) | — |
-| **Test Execution Report** | Test run summary, pass/fail status, execution velocity, and defect density metrics | [🔗 Test Execution & Metrics Report (Google Sheets)](https://docs.google.com/spreadsheets/d/YOUR_GOOGLE_SHEET_ID_EXECUTION_REPORT/edit?usp=sharing) | — |
-| **Defect / Bug Reports** | Triage log of logged bugs, including severity, priority, steps to reproduce, and statuses | [🔗 Defect Log & Triage Report (Google Sheets)](https://docs.google.com/spreadsheets/d/YOUR_GOOGLE_SHEET_ID_BUG_REPORTS/edit?usp=sharing) | — |
-
-> **Note for Evaluators:** If you maintain all tabs within a single Google Sheets workbook, you can link to the specific tab by appending the grid ID (`#gid=...`) to each link above.
+| **Test Plan** | Comprehensive test strategy, scope, environment, entry/exit criteria, and risk mitigation | [🔗 OpenCart Test Plan (Google Docs)](https://docs.google.com/document/d/1Omb3T6WHyrPhB0V2rR4UeJ_hqhC8usK9HRGUJZv817c/edit?usp=sharing) | — |
+| **Test Cases** | Detailed test cases covering 18 functional modules (preconditions, steps, data, expected results) | [🔗 OpenCart Test Cases Suite (Google Sheets)](https://docs.google.com/spreadsheets/d/1UKnDiSG0aXSwqHGvS-ZgcRhKDuCeSHbfrPyovwVhG7g/edit?usp=sharing) | — |
+| **Requirements Traceability Matrix (RTM)** | Bidirectional mapping between business requirements, test cases, and automated scripts | [🔗 Requirements Traceability Matrix (Google Sheets)](https://docs.google.com/spreadsheets/d/1224jJ4HHsJgfKpROKIInn-J333lsMIPAbD3zIc-Iqzc/edit?usp=sharing) | — |
 
 ---
 
@@ -60,28 +56,7 @@ To maximize defect discovery while maintaining high testing efficiency, the test
 4. **State Transition Testing:** Validated cart recalculations when transitioning between empty, single-product, multi-product, and modified quantity states.
 5. **Cross-Browser & Responsive Design:** Validated checkout and cart UI adaptability on desktop (Chromium, WebKit, Firefox) and mobile viewports (375x667).
 
----
 
-## 🐞 Standard Bug Report Format
-
-All defects identified during manual execution are logged with standardized severity and priority ratings:
-
-```markdown
-### [BUG-001] Cart total fails to update after removing discounted product
-- **Severity:** High
-- **Priority:** High
-- **Environment:** Chrome 124.0.0, Windows 11, Test URL: http://localhost/opencart/upload
-- **Prerequisites:** User is logged in; cart contains 2 or more distinct products.
-- **Steps to Reproduce:**
-  1. Navigate to the Shopping Cart page.
-  2. Click the 'Remove' (red X) button next to the discounted product.
-  3. Observe the Sub-Total and Total values in the order summary table.
-- **Expected Result:**
-  Sub-Total and Total should immediately recalculate deducting the removed product price.
-- **Actual Result:**
-  Total displays the previous value until the browser page is manually refreshed.
-- **Attachments:** Screenshot_2026-10-25_Cart_Bug.png
-```
 
 ---
 

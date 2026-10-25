@@ -9,7 +9,7 @@
 An industry-grade **Quality Assurance and Test Automation Showcase** developed for the **OpenCart E-Commerce** platform. 
 
 This repository demonstrates a complete, dual-track QA strategy:
-1. **Manual Testing Rigor:** IEEE 829-aligned Test Planning, 18-module Test Case Suite, Requirements Traceability Matrix (RTM), execution reporting, and defect triage.
+1. **Manual Testing Rigor:** IEEE 829-aligned Test Planning (Google Docs), 18-module Test Case Suite (Google Sheets), and Requirements Traceability Matrix (RTM).
 2. **Software Automation Architecture:** Scalable, resilient **Playwright + TypeScript** framework leveraging the **Page Object Model (POM)** pattern, dynamic data generation, security/XSS testing, responsive viewport validation, and **GitHub Actions CI/CD**.
 
 ---
@@ -20,9 +20,9 @@ For recruiters and engineering leaders looking for specific deliverables:
 
 | Deliverable Area | Description | Direct Link |
 | :--- | :--- | :--- |
-| 📋 **Manual Testing Portfolio** | Test Plan, 18-module Test Cases, RTM, Execution Metrics, Bug Reports, and Google Sheets links | [👉 View Manual Testing Docs](docs/manual-testing/README.md) |
+| 📋 **Manual Testing Portfolio** | Test Plan, 18-module Test Cases, and Requirements Traceability Matrix (RTM) | [👉 View Manual Testing Docs](docs/manual-testing/README.md) |
 | 🤖 **Automation Architecture** | Framework design, Page Object Model, 22 automated Cart tests, locators, and CI/CD pipeline | [👉 View Automation Docs](docs/automation-testing/README.md) |
-| 📊 **Live Test Deliverables** | Direct links to live collaborative Google Sheets (Test Plan, Cases, RTM, Bugs) | [👉 Open Sheets Links](docs/manual-testing/README.md#-core-manual-testing-deliverables) |
+| 📊 **Live Test Deliverables** | Direct links to live Test Plan (Google Docs), Test Cases (Google Sheets), and RTM (Google Sheets) | [👉 Open Deliverables](docs/manual-testing/README.md#-core-manual-testing-deliverables) |
 
 ---
 
@@ -30,13 +30,12 @@ For recruiters and engineering leaders looking for specific deliverables:
 
 ```mermaid
 flowchart LR
-    A[Business Requirements] --> B[Test Scenarios & Plan]
+    A[Business Requirements] --> B[Test Plan & Strategy]
     B --> C[Manual Test Design & RTM]
-    C --> D[Defect Triage & Execution]
-    C --> E[POM Test Automation]
-    E --> F[Playwright + TypeScript Suite]
-    F --> G[GitHub Actions CI/CD]
-    G --> H[HTML Reports & Traces]
+    C --> D[POM Test Automation]
+    D --> E[Playwright + TypeScript Suite]
+    E --> F[GitHub Actions CI/CD]
+    F --> G[HTML Reports & Traces]
 ```
 
 ---
@@ -45,7 +44,7 @@ flowchart LR
 
 ### 1. Manual Testing (18 Functional Modules)
 - **Scope:** Full coverage of e-commerce customer journeys including Account Management (Register, Login, Password, Address), Product Discovery (Search, Currency Switching, Compare), Transactions (Add to Cart, Shopping Cart, Wishlist, Orders), and Compliance.
-- **Artifacts:** Maintained live in Google Sheets and versioned locally in [`sheet.xlsx`](./sheet.xlsx).
+- **Artifacts:** Maintained live in Google Docs & Google Sheets (Test Plan, Test Cases Suite, and RTM).
 
 ### 2. Automated Test Suite (Playwright + TypeScript)
 - **Shopping Cart Module (`TS-010`):** 22 comprehensive automated tests ([`tests/cart.spec.ts`](./tests/cart.spec.ts)) covering:
@@ -82,8 +81,7 @@ opencart/
 │   └── registration.spec.ts       # Registration scenarios
 ├── playwright.config.ts           # Playwright framework configuration
 ├── package.json                   # Project scripts and dependencies
-├── pnpm-lock.yaml                 # Dependency lockfile
-└── sheet.xlsx                     # Master manual testing workbook
+└── pnpm-lock.yaml                 # Dependency lockfile
 ```
 
 ---
