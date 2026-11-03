@@ -9,7 +9,7 @@
 An industry-grade **Quality Assurance and Test Automation Showcase** developed for the **OpenCart E-Commerce** platform. 
 
 This repository demonstrates a complete, dual-track QA strategy:
-1. **Manual Testing Rigor:** IEEE 829-aligned Test Planning (Google Docs), 18-module Test Case Suite (Google Sheets), and Requirements Traceability Matrix (RTM).
+1. **Manual Testing Rigor:** IEEE 829-aligned Test Planning (Google Docs), 18-module Test Case Suite (Google Sheets), Requirements Traceability Matrix (RTM), and Bug Reports / Defect Log.
 2. **Software Automation Architecture:** Scalable, resilient **Playwright + TypeScript** framework leveraging the **Page Object Model (POM)** pattern, dynamic data generation, security/XSS testing, responsive viewport validation, and **GitHub Actions CI/CD**.
 
 ---
@@ -20,9 +20,9 @@ For recruiters and engineering leaders looking for specific deliverables:
 
 | Deliverable Area | Description | Direct Link |
 | :--- | :--- | :--- |
-| 📋 **Manual Testing Portfolio** | Test Plan, 18-module Test Cases, and Requirements Traceability Matrix (RTM) | [👉 View Manual Testing Docs](docs/manual-testing/README.md) |
+| 📋 **Manual Testing Portfolio** | Test Plan, 18-module Test Cases, Requirements Traceability Matrix (RTM), and Bug Reports | [👉 View Manual Testing Docs](docs/manual-testing/README.md) |
 | 🤖 **Automation Architecture** | Framework design, Page Object Model, 22 automated Cart tests, locators, and CI/CD pipeline | [👉 View Automation Docs](docs/automation-testing/README.md) |
-| 📊 **Live Test Deliverables** | Direct links to live Test Plan (Google Docs), Test Cases (Google Sheets), and RTM (Google Sheets) | [👉 Open Deliverables](docs/manual-testing/README.md#-core-manual-testing-deliverables) |
+| 📊 **Live Test Deliverables** | Direct links to live Test Plan (Google Docs), Test Cases (Google Sheets), RTM (Google Sheets), and Bug Report (Google Docs) | [👉 Open Deliverables](docs/manual-testing/README.md#-core-manual-testing-deliverables) |
 
 ---
 
@@ -44,7 +44,7 @@ flowchart LR
 
 ### 1. Manual Testing (18 Functional Modules)
 - **Scope:** Full coverage of e-commerce customer journeys including Account Management (Register, Login, Password, Address), Product Discovery (Search, Currency Switching, Compare), Transactions (Add to Cart, Shopping Cart, Wishlist, Orders), and Compliance.
-- **Artifacts:** Maintained live in Google Docs & Google Sheets (Test Plan, Test Cases Suite, and RTM).
+- **Artifacts:** Maintained live in Google Docs & Google Sheets (Test Plan, Test Cases Suite, RTM, and Bug Report).
 
 ### 2. Automated Test Suite (Playwright + TypeScript)
 - **Shopping Cart Module (`TS-010`):** 22 comprehensive automated tests ([`tests/cart.spec.ts`](./tests/cart.spec.ts)) covering:
