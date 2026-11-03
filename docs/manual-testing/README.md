@@ -12,9 +12,9 @@ The live testing artifacts are maintained online for real-time collaboration and
 
 | Deliverable | Description | Live Document Link | Local Reference |
 | :--- | :--- | :--- | :--- |
-| **Test Plan** | Comprehensive test strategy, scope, environment, entry/exit criteria, and risk mitigation | [🔗 OpenCart Test Plan (Google Docs)](https://docs.google.com/document/d/1Omb3T6WHyrPhB0V2rR4UeJ_hqhC8usK9HRGUJZv817c/edit?usp=sharing) | — |
-| **Test Cases** | Detailed test cases covering 18 functional modules (preconditions, steps, data, expected results) | [🔗 OpenCart Test Cases Suite (Google Sheets)](https://docs.google.com/spreadsheets/d/1UKnDiSG0aXSwqHGvS-ZgcRhKDuCeSHbfrPyovwVhG7g/edit?usp=sharing) | — |
-| **Requirements Traceability Matrix (RTM)** | Bidirectional mapping between business requirements, test cases, and automated scripts | [🔗 Requirements Traceability Matrix (Google Sheets)](https://docs.google.com/spreadsheets/d/1224jJ4HHsJgfKpROKIInn-J333lsMIPAbD3zIc-Iqzc/edit?usp=sharing) | — |
+| **Test Plan** | Comprehensive test strategy, scope, environment, entry/exit criteria, and risk mitigation | [🔗 OpenCart Test Plan (Google Docs)](https://docs.google.com/document/d/1Omb3T6WHyrPhB0V2rR4UeJ_hqhC8usK9HRGUJZv817c/edit?usp=sharing) | [TEST_PLAN.md](./TEST_PLAN.md) |
+| **Test Cases** | Detailed test cases covering 18 functional modules (preconditions, steps, data, expected results) | [🔗 OpenCart Test Cases Suite (Google Sheets)](https://docs.google.com/spreadsheets/d/1UKnDiSG0aXSwqHGvS-ZgcRhKDuCeSHbfrPyovwVhG7g/edit?usp=sharing) | [TEST_CASES.md](./TEST_CASES.md) |
+| **Requirements Traceability Matrix (RTM)** | Bidirectional mapping between business requirements, test cases, and automated scripts | [🔗 Requirements Traceability Matrix (Google Sheets)](https://docs.google.com/spreadsheets/d/1224jJ4HHsJgfKpROKIInn-J333lsMIPAbD3zIc-Iqzc/edit?usp=sharing) | [RTM.md](./RTM.md) |
 | **Bug Reports / Defect Log** | Documented defect findings, severity/priority classifications, reproduction steps, and root-cause analysis | [🔗 OpenCart Bug Report (Google Docs)](https://docs.google.com/document/d/1JsNHS9bonb2RUVn-gYj-ii4pceV6HlEkWg_fP6HIAVY/edit?usp=sharing) | [BUG_REPORT.md](./BUG_REPORT.md) |
 
 ---

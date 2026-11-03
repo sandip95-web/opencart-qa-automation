@@ -66,8 +66,12 @@ opencart/
 │   └── workflows/
 │       └── playwright.yml         # Automated CI pipeline
 ├── docs/
-│   ├── manual-testing/            # Manual QA Strategy & Google Sheets links
-│   │   └── README.md
+│   ├── manual-testing/            # Manual QA Strategy & Google Docs/Sheets links
+│   │   ├── README.md              # Deliverables summary & scope
+│   │   ├── TEST_PLAN.md           # Master test plan (IEEE 829 aligned)
+│   │   ├── TEST_CASES.md          # 18 functional modules test suite
+│   │   ├── RTM.md                 # Requirements Traceability Matrix
+│   │   └── BUG_REPORT.md          # Defect log & bug report
 │   └── automation-testing/        # Framework Architecture & Test Coverage guide
 │       └── README.md
 ├── pages/                         # Page Object Model (POM) classes
